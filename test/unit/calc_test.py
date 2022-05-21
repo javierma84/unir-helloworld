@@ -47,7 +47,7 @@ class TestCalculate(unittest.TestCase):
         self.assertRaises(TypeError, self.calc.divide, "0", 0)
 
     def test_multiply_method_returns_correct_result(self):
-        self.assertEqual(4, self.calc.multiply(2, 2))
+        self.assertEqual(6, self.calc.multiply(2, 2))
         self.assertEqual(0, self.calc.multiply(1, 0))
         self.assertEqual(0, self.calc.multiply(-1, 0))
         self.assertEqual(-2, self.calc.multiply(-1, 2))
