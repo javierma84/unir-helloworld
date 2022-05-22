@@ -40,7 +40,7 @@ pipeline {
                                 echo $FLASK_ENV
                                 flask run &
                                 java -jar /usr/share/wiremock/wiremock-jre8-standalone-2.33.2.jar --port 9090 --root-dir /usr/share/wiremock &
-                                sleep 1s
+                                sleep 3s
 				export PYTHONPATH=$WORKSPACE
                                 pytest --junitxml=result-rest.xml test/rest
                             '''
